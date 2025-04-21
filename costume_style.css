@@ -1,0 +1,107 @@
+body {
+    background-color: #D9F7FF; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(../final_project/WW_images/bg_repeat.jpg);
+    background-repeat: repeat-y;
+    background-position: fixed;
+    background-size: contain;
+position: relative;
+height:1500px;}
+
+a{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;}
+
+
+/*Banner with big logo*/
+.banner_container{ width: 100%; margin: 0 auto;text-align: center;}
+
+.text_logo{padding-top: 2%;object-fit:contain;
+    top: 0; left: 0; height: 40%; width: 40%;} 
+
+
+/*Global nav of links*/
+.global_nav_links{padding:1%;margin-top: 1%;
+    top: 0; left: 0; text-align: center;background-color:#fff1dc;width: 40%;
+    box-shadow: -10px 10px #7cd8ffb0; border-radius: 2%; float:right; }
+    
+.global_nav_links a {padding-left: 3%;padding-right: 3%; font-size:170%;color: #ffa89b;}
+
+.global_nav_links a:hover{background-color: rgba(255, 224, 216, 0.836);padding-bottom: 1%;border-radius: 5%;transition: .3s ease;}
+.global_nav_links a:active{color: rgb(255, 116, 81);padding-bottom: 1%;border-radius: 5%;}
+
+
+/*main 1st body box*/
+.body_box{height:550px;background-color: #ebfbff;width: 90%; margin: 0 auto;
+    border-radius: 1%;margin-top: 2%;margin-bottom: 5%;width: 80%;}
+
+.costume_heading{color: #00374d;; text-decoration: underline;padding-top: 2%;;margin: 0 auto;text-align: center;font-size:250%;font-style: italic;}
+.costume_para{margin: 0 auto; text-align: center;margin-bottom: 20px;color: #00374d;font-size:105%;line-height: 140%;width: 67%;
+    padding-top: 2%;margin-bottom: -13px;}
+.fursuit_com_blurb{width: 80%;margin:0 auto;color: #00374d;text-align: center;}
+
+.body_box a {color: #3EADDC;text-decoration: underline;font-style: italic;}
+.body_box h3 {text-align: center;}
+.body_box a:hover{background-color: rgb(255, 255, 255);border-radius: 2%;transition: .3s ease;font-size: 125%;}
+.body_box a:active{color: rgb(121, 219, 255);border-radius: 2%;}
+
+/*scrolling div*/
+
+.gallery {width: 800px;
+display: flex;overflow-x: scroll;transition: transform 0.9s;}
+
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    flex: none;
+    margin-top: -5%;
+    margin-bottom: -5%;
+
+}
+
+.gallery div img{
+    width: 100%;
+    
+    padding: 40px;
+    padding-left: 0px;}
+
+.gallery::-webkit-scrollbar{display: none;}
+
+.gallery-wrap{display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto;}
+
+#backBtn, #nextBtn{
+    width: 70px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.gallery:hover{
+    width: 850px;
+    transform: scale(1.02);}
+
+/*Spinning Icon*/
+.small_icon{position: fixed; bottom: 0px; right: 0px; height: 120px;margin: 15px;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay:calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;}
+
+.desc_info{margin: 0 auto; text-align: center;margin-bottom: 10px;color: #00374dae;font-size:105%}
+
+
+
+        /*java*/
+@keyframes rotate {
+    to{
+       transform: rotate(360deg);
+   }
+}
+
+body { -webkit-animation:fadein 0.7s; animation:fadein 0.7s }
+@-webkit-keyframes fadein { from {opacity:0} to {opacity:1} }
+@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+

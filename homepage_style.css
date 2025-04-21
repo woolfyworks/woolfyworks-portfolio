@@ -1,0 +1,97 @@
+/*body and bg*/
+body {
+    background-color: #D9F7FF; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(../final_project/WW_images/bg_repeat.jpg);
+    background-repeat: repeat;
+    background-position: fixed;
+    background-size: contain;
+position: relative;
+overflow-x:hidden }
+
+.bg_image{position: absolute;z-index: -10;}
+.bg_image img { margin: 0 auto;
+ object-fit:contain;
+ top: 0; left: 0; height: 100%; width: 100%; border-radius: 1.5%;}
+
+a{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;}
+
+/*rest of page*/
+
+
+/*Banner with big logo*/
+.banner_container{ width: 100%; margin: 0 auto;text-align: center;}
+
+.text_logo{padding-top: 2%;object-fit:contain;
+    top: 0; left: 0; height: 50%; width: 50%; translate: -3%;} 
+
+
+
+/*Div with walking wolf, banner and icon links*/
+.etsy_banner_container{width: 45%; margin: 0 auto;text-align: center;position: relative;margin-bottom: -4%;}
+
+.etsy_banner_img{width: 100%; margin: 0 auto;text-align: center;}
+
+.square_links img {height: 63px;transition: .3s ease;}
+.square_links img:hover {height: 75px;transition: .3s ease;}
+
+.square_links a {margin: 10px;}
+
+.square_links{z-index: 2;position: absolute; top:35%; left: 43%;}
+
+
+/*Main Text Box*/
+.body_box{height:810px;background-color: #ebfbff;width: 65%; margin: 0 auto;margin-bottom:2%;border-radius: 1%;}
+
+.body_paragraph{margin: 0 auto;text-align: center; padding: 7%;padding-bottom: 0%;font-size:112%;line-height: 125%;
+    width: 75%;color: #00374d;}
+
+
+/*Banner of links text only*/
+.banner_links{padding:2%;
+    top: 0; left: 0; margin: 0 auto;text-align: center;background-color:#fff1dc;width: 75%;
+    box-shadow: -10px 10px #7cd8ffb0; border-radius: 2%; }
+    
+.banner_links a {padding-left: 3%;padding-right: 3%; font-size:150%;color: #ffa89b;}
+
+.banner_links a:hover{background-color: rgba(255, 224, 216, 0.636);padding-bottom: 1%;border-radius: 5%;transition: .3s ease;}
+.banner_links a:active{color: rgb(255, 116, 81);padding-bottom: 1%;border-radius: 5%;}
+
+
+.updates_para{margin: 0 auto;margin-top: 7%;font-size:110%;line-height: 135%;
+    width: 100%;color: #005779; }
+
+.bottom_banner {object-fit:contain;
+    top: 0; left: 0; height: 100%; width: 100%;margin: 0 auto;border-radius: 2%;}
+
+
+
+/*footers*/
+.desc_info{margin: 0 auto; text-align: center;margin-bottom: 20px;color: #00374dae;font-size:105%}
+
+.etsy_https a{color: #3EADDC;transition: .3s ease;}
+
+.etsy_https a:hover{background-color: rgb(255, 255, 255);padding: 1%;border-radius: 2%;transition: .3s ease;font-size: 115%;}
+
+.etsy_https a:active{color: rgb(121, 219, 255);padding: 1%;border-radius: 2%;}
+
+.model_gif{position: fixed; bottom: 0px; right: 0px; height: 300px;margin: 15px;margin-bottom: 0;}
+
+/*Icon*/
+.small_icon{position: fixed; bottom: 0px; right: 0px; height: 120px;margin: 15px;
+animation: rotate 1s linear infinite;
+animation-play-state: paused;
+animation-delay:calc(var(--scroll) * -1s);
+animation-iteration-count: 1;
+animation-fill-mode: both;}
+
+/*java*/
+@keyframes rotate {
+     to{
+        transform: rotate(360deg);
+    }
+}
+
+body { -webkit-animation:fadein 0.7s; animation:fadein 0.7s }
+@-webkit-keyframes fadein { from {opacity:0} to {opacity:1} }
+@keyframes fadein { from {opacity:0} to {opacity:1} }

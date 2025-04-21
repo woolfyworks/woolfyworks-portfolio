@@ -1,0 +1,30 @@
+/*Java for scrolling icon^^^*/  
+window.addEventListener('scroll', () => 
+  {document.body.style.setProperty('--scroll',window.
+  pageYOffset/(document.body.offsetHeight-window.innerHeight))
+})
+
+
+/*Java for scrolling images with button*/
+let scroll_container = document.querySelector(".gallery");
+let backBtn = document.getElementById("backBtn");
+let nextBtn = document.getElementById("nextBtn");
+scroll_container.addEventListener("wheel",(evt)=>{
+    evt.preventDefault();
+    scroll_container.scrollLeft += evt.deltaY;
+    scroll_container.style.scrollBehavior="auto";
+})
+
+nextBtn.addEventListener("click", ()=>{
+    scroll_container.style.scrollBehavior="smooth";
+    scroll_container.scrollLeft += 800;
+});
+
+backBtn.addEventListener("click", ()=>{
+    scroll_container.style.scrollBehavior="smooth";
+    scroll_container.scrollLeft -= 800;
+});
+
+
+
+
