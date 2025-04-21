@@ -1,7 +1,7 @@
 /*body and bg*/
 body:not(.faq_body_total) {
     background-color: #D9F7FF; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url(../final_project/WW_images/bg_repeat.jpg);
+    background-image: url(WW_images/bg_repeat.jpg);
     background-repeat: repeat-y;
     background-position: fixed;
     background-size: contain;
