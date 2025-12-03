@@ -48,7 +48,7 @@ a{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 .model_gif{position: relative;height: 320px;float: left;margin:3%;border-radius: 2%;border-style: dashed;}
 
 /*local links to galleries*/
-.local_links_art_page{float: none;width: 90%;padding-top: 2%; margin: 3%;}
+.local_links_art_page{float: none;width: 90%;padding-top: 10%; margin: 3%;}
 .local_links_art_page img:not(.suit_tall_icons){width: 40%;display: block;padding-bottom: 1%;padding-top: 1%;opacity: 82%;}
 .local_links_art_page img:hover:not(.suit_tall_icons) {opacity: 100%;transition: .5s ease;box-shadow: -10px 10px #7cd8ffb0;}
 
@@ -76,6 +76,12 @@ a{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-width: 6px;border-style: dashed;border-color: #ffa89bb0;margin-bottom: 10%;margin-top: 340px;}
    #dig_art img {height: 240px;padding: 1%;border-radius: 2%;}
    #dig_art img:hover {transition: .3s ease;height: 270px;padding: 1%;border-radius: 10%;height: 300px;}
+
+   /*gallery of products css*/
+   #products{background-color:#fff8ec;border-radius: 2%;width: 90%;margin: 0 auto;
+    border-width: 6px;border-style: dashed;border-color: #ffa89bb0;margin-bottom: 10%;margin-top: 340px;}
+   #products img {height: 240px;padding: 1%;border-radius: 2%;}
+   #products img:hover {transition: .3s ease;height: 270px;padding: 1%;border-radius: 10%;height: 300px;}
 
   
 
