@@ -31,7 +31,7 @@ img {
   inset: 0;
   z-index: -10;
   pointer-events: none;
-  transition: opacity 600ms ease-out; /* slow, smooth fade */
+  transition: opacity 1200ms ease-out; /* slow, smooth fade */
 }
 
 .bg_image img {
@@ -124,6 +124,10 @@ a {
 /* Banner of links text only */
 .banner_links {
   margin: 1rem auto 0;
+  
+position: relative; /* create stacking context */
+  z-index: 5;         /* lift above overlapping elements */
+
   padding: 0.75rem 1rem;
   text-align: center;
   background-color: #fff1dc;
