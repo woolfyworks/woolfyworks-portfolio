@@ -150,9 +150,12 @@ position: relative; /* create stacking context */
 .banner_links a:hover {
   background-color: rgba(255, 224, 216, 0.636);
   transition: background-color .2s ease;
+  transition: all .2s ease;
+  transform: scale(1.10);
 }
 .banner_links a:active {
   color: rgb(255, 116, 81);
+  transform: scale(1.10);
 }
 
 /* Updates section (centered) */
