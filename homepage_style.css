@@ -230,6 +230,7 @@ position: relative; /* create stacking context */
   animation-iteration-count: 1;
   animation-fill-mode: both;
   filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+  z-index: 10;
 }
 
 /* Java animations */
@@ -244,50 +245,31 @@ body {
 @-webkit-keyframes fadein { from {opacity:0} to {opacity:1} }
 @keyframes fadein { from {opacity:0} to {opacity:1} }
 
-/* ---------- Responsive Tweaks ---------- */
 
-/* Small phones */
+/* ---------- Responsive positioning & sizing ---------- */
+
+/* Small phones: nudge overlay lower, slightly larger icons for tap targets */
 @media (max-width: 480px) {
-  .text_logo {
-    width: 85%;
-  }
-  .square_links img {
-    height: 48px;
-  }
   .square_links {
-    bottom: 6%;
+    top: 62%;                      /* sits lower so it doesn't crowd banner top */
+    transform: translate(-50%, -50%);
     gap: 10px;
   }
-  .body_paragraph {
-    padding: 1rem 1rem 0.25rem;
-    width: 92%;              /* a touch wider on very small screens */
-  }
-  .banner_links {
-    padding: 0.6rem 0.8rem;
-    box-shadow: -6px 6px #7cd8ffb0;
-  }
-  .small_icon {
-    height: 72px; /* smaller icon for mobile thumb zone */
-    right: 10px;
-    bottom: 10px;
+  .square_links img {
+    width: 72px;                   /* larger icons for mobile */
   }
 }
 
-/* Tablets */
+/* Tablets: medium placement and size */
 @media (min-width: 481px) and (max-width: 900px) {
-  .text_logo {
-    width: 70%;
-  }
-  .etsy_banner_container {
-    width: 80%;
+  .square_links {
+    top: 55%;
   }
   .square_links img {
-    height: 56px;
-  }
-  .banner_links {
-    width: 85%;
+    width: 68px;
   }
 }
+
 
 /* Desktops */
 @media (min-width: 901px) {
