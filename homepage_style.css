@@ -41,7 +41,7 @@ a{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
 /*Main Text Box*/
-.body_box{height:810px;background-color: #ebfbff;width: 65%; margin: 0 auto;margin-bottom:2%;border-radius: 1%;}
+.body_box{height:1000px;background-color: #ebfbff;width: 65%; margin: 0 auto;margin-bottom:2%;border-radius: 1%;}
 
 .body_paragraph{margin: 0 auto;text-align: center; padding: 7%;padding-bottom: 0%;font-size:112%;line-height: 125%;
     width: 75%;color: #00374d;}
